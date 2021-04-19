@@ -24,9 +24,10 @@ Application Script
 ------------------
 flasky.py: main script  
 The configuration is taken from the environment variable FLASK_CONFIG if it’s defined, or else the default configuration is used  
-
+Linux:
 export FLASK_APP=flasky.py
-
+Windows:
+set FLASK_APP=flasky.py
 
 Unit Tests
 ----------
