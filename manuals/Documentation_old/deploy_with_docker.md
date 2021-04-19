@@ -6,6 +6,7 @@ Docker zum laufen bringen
 Achtung, Fehler bei Installation von docker über Snap. Siehe meinen Kommentar in stack overflow:
 https://stackoverflow.com/questions/51729836/error-response-from-daemon-cannot-stop-container/64120350#64120350
    
+danach ist ein reboot erfordelich!
 
  docker build -t yetigo/osteotomy:latest .  
  docker run --name pum -d -p 8000:5000 --rm yetigo/osteotomy:latest  
