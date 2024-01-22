@@ -236,7 +236,7 @@ class APITestCase(unittest.TestCase):
             headers=self.get_api_headers('john@example.com', 'cat'))
         self.assertEqual(response.status_code, 200)
         json_response = json.loads(response.get_data(as_text=True))
-        self.assertEqual('http://localhost' + json_response['url'], url)
+        self.assertEqual(json_response['url'], url)
         self.assertEqual(json_response['body'],
                         'Good [post](http://example.com)!')
 
